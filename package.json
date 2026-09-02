@@ -1,0 +1,17 @@
+{
+  "name": "babel-AST-analyzer",
+  "version": "1.2.1",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node analyzer/v1/run.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/parser": "^8.0.4"
+  },
+  "devDependencies": {
+  }
+}
