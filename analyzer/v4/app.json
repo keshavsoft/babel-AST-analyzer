@@ -1,0 +1,58 @@
+{
+  "totalNodes": 6,
+  "nodeTypeCounts": {
+    "ImportDeclaration": 2,
+    "VariableDeclaration": 2,
+    "ExpressionStatement": 2
+  },
+  "nodes": [
+    {
+      "type": "ImportDeclaration",
+      "text": "import express from \"express\";",
+      "raka": "express",
+      "poka": "express",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "text": "import { router as routerFromApi } from './Api/routes.js';",
+      "raka": "./Api/routes.js",
+      "poka": "routerFromApi",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "text": "const app = express()",
+      "raka": null,
+      "poka": "app",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "text": "const port =  3000;",
+      "raka": null,
+      "poka": "port",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ExpressionStatement",
+      "text": "app.use(\"/Api\", routerFromApi);",
+      "raka": null,
+      "poka": null,
+      "routePath": "/Api",
+      "routeHandler": "routerFromApi"
+    },
+    {
+      "type": "ExpressionStatement",
+      "text": "app.listen(port, () => {\r\n    console.log(`http://localhost:${port}`);\r\n});",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    }
+  ]
+}
