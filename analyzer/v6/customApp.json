@@ -1,0 +1,80 @@
+{
+  "totalNodes": 7,
+  "nodeTypeCounts": {
+    "ImportDeclaration": 3,
+    "VariableDeclaration": 2,
+    "ExpressionStatement": 2
+  },
+  "nodes": [
+    {
+      "type": "ImportDeclaration",
+      "start": 0,
+      "end": 30,
+      "text": "import express from \"express\";",
+      "raka": "express",
+      "poka": "express",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 32,
+      "end": 60,
+      "text": "import dotenv from \"dotenv\";",
+      "raka": "dotenv",
+      "poka": "dotenv",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 63,
+      "end": 126,
+      "text": "import { router as routerFromApi } from\r\n    './Api/routes.js';",
+      "raka": "./Api/routes.js",
+      "poka": "routerFromApi",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 130,
+      "end": 151,
+      "text": "const app = express()",
+      "raka": null,
+      "poka": "app",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 155,
+      "end": 173,
+      "text": "const port = 3000;",
+      "raka": null,
+      "poka": "port",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 177,
+      "end": 208,
+      "text": "app.use(\"/Api\", routerFromApi);",
+      "raka": null,
+      "poka": null,
+      "routePath": "/Api",
+      "routeHandler": "routerFromApi"
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 212,
+      "end": 287,
+      "text": "app.listen(port, () => {\r\n    console.log(`http://localhost:${port}`);\r\n});",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    }
+  ]
+}
