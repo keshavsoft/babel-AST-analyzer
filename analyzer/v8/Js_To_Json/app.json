@@ -1,0 +1,182 @@
+{
+  "totalNodes": 17,
+  "nodeTypeCounts": {
+    "ImportDeclaration": 8,
+    "ExpressionStatement": 5,
+    "VariableDeclaration": 2,
+    "IfStatement": 1,
+    "EmptyStatement": 1
+  },
+  "nodes": [
+    {
+      "type": "ImportDeclaration",
+      "start": 0,
+      "end": 37,
+      "text": "import { exec } from \"child_process\";",
+      "raka": "child_process",
+      "poka": "exec",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 39,
+      "end": 66,
+      "text": "import dotenv from 'dotenv'",
+      "raka": "dotenv",
+      "poka": "dotenv",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 68,
+      "end": 99,
+      "text": "dotenv.config({ path: '.env' })",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 103,
+      "end": 133,
+      "text": "import express from \"express\";",
+      "raka": "express",
+      "poka": "express",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 137,
+      "end": 195,
+      "text": "import { router as routerFromApi } from './Api/routes.js';",
+      "raka": "./Api/routes.js",
+      "poka": "routerFromApi",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 199,
+      "end": 255,
+      "text": "import { router as routerFromV2 } from './V2/routes.js';",
+      "raka": "./V2/routes.js",
+      "poka": "routerFromV2",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 257,
+      "end": 313,
+      "text": "import { router as routerFromV1 } from './V1/routes.js';",
+      "raka": "./V1/routes.js",
+      "poka": "routerFromV1",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 317,
+      "end": 355,
+      "text": "import setupRoutes from \"./routes.js\";",
+      "raka": "./routes.js",
+      "poka": "setupRoutes",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 357,
+      "end": 395,
+      "text": "import startServer from \"./server.js\";",
+      "raka": "./server.js",
+      "poka": "startServer",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 399,
+      "end": 420,
+      "text": "const app = express()",
+      "raka": null,
+      "poka": "app",
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 424,
+      "end": 441,
+      "text": "setupRoutes(app);",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "start": 445,
+      "end": 479,
+      "text": "const { port } = startServer(app);",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 483,
+      "end": 514,
+      "text": "app.use(\"/Api\", routerFromApi);",
+      "raka": null,
+      "poka": null,
+      "routePath": "/Api",
+      "routeHandler": "routerFromApi"
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 518,
+      "end": 547,
+      "text": "app.use(\"/V2\", routerFromV2);",
+      "raka": null,
+      "poka": null,
+      "routePath": "/V2",
+      "routeHandler": "routerFromV2"
+    },
+    {
+      "type": "ExpressionStatement",
+      "start": 549,
+      "end": 578,
+      "text": "app.use(\"/V1\", routerFromV1);",
+      "raka": null,
+      "poka": null,
+      "routePath": "/V1",
+      "routeHandler": "routerFromV1"
+    },
+    {
+      "type": "IfStatement",
+      "start": 582,
+      "end": 694,
+      "text": "if (process.env.OPEN_BROWSER === \"true\") {\r\n    exec(`start http://localhost:${port}/v3/doctors/index.html`);\r\n}",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 694,
+      "end": 695,
+      "text": ";",
+      "raka": null,
+      "poka": null,
+      "routePath": null,
+      "routeHandler": null
+    }
+  ]
+}
