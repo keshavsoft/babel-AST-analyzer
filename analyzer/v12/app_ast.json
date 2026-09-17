@@ -1,0 +1,46 @@
+[
+    {
+        "type": "VariableDeclaration",
+        "start": 0,
+        "end": 35,
+        "before": "",
+        "text": "const express = require('express');",
+        "raka": null,
+        "poka": "express",
+        "routePath": null,
+        "routeHandler": null
+    },
+    {
+        "type": "VariableDeclaration",
+        "start": 37,
+        "end": 59,
+        "before": "\n\n",
+        "text": "const app = express();",
+        "raka": null,
+        "poka": "app",
+        "routePath": null,
+        "routeHandler": null
+    },
+    {
+        "type": "ExpressionStatement",
+        "start": 61,
+        "end": 123,
+        "before": "\n\n",
+        "text": "app.get('/', (req, res) => {\n    res.send('Hello World!');\n});",
+        "raka": null,
+        "poka": null,
+        "routePath": "/",
+        "routeHandler": null
+    },
+    {
+        "type": "ExpressionStatement",
+        "start": 125,
+        "end": 142,
+        "before": "\n\n",
+        "text": "app.listen(3000);",
+        "raka": null,
+        "poka": null,
+        "routePath": 3000,
+        "routeHandler": null
+    }
+]
