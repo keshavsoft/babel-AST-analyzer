@@ -1,3 +1,3 @@
-import { StartFunc as generateRoute } from "./01_generator/entryFile.js";
+import { StartFunc as generateRoute } from "./01_generator/index.js";
 
 generateRoute();

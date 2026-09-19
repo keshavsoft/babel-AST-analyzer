@@ -1,12 +1,12 @@
-const transform = ({ sourceCode, insertions }) => {
-
+const transform = ({ sourceRouteCode, insertions }) => {
+    
     const insertNode = insertions[0];
 
     const newCode =
-        sourceCode.slice(0, insertNode.start) +
+        sourceRouteCode.slice(0, insertNode.start) +
         insertNode.insertText +
         "\n\n" +
-        sourceCode.slice(insertNode.start);
+        sourceRouteCode.slice(insertNode.start);
     
     return newCode;
 };
