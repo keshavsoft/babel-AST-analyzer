@@ -1,0 +1,7 @@
+[
+    {
+        "start": 32,
+        "end": 64,
+        "insertText": "import { router as routerFromdoctors } from './doctors/end-points.js';"
+    }
+]
